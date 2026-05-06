@@ -45,9 +45,9 @@ Se per errore li cancelli, basta committare un fix successivo per ripristinarli.
 3. Manda un messaggio che testa il nuovo comportamento.
 
 Se vuoi essere certo della versione attiva, apri la console del browser e digita:
-```fetch('https://raw.githubusercontent.com/plannest/cybercoach-config/main/system-prompt.md?t=' + Date.now())
+`fetch('https://raw.githubusercontent.com/plannest/cybercoach-config/main/system-prompt.md?t=' + Date.now())
 .then(r => r.text())
-.then(t => console.log(t.slice(0, 200)))```
+.then(t => console.log(t.slice(0, 200)))`
 
 
 ## Rollback
@@ -55,9 +55,8 @@ Se vuoi essere certo della versione attiva, apri la console del browser e digita
 Sbagliato qualcosa? Vai sulla [history dei commit](../../commits/main/system-prompt.md), clicca quello buono precedente, copia il contenuto, incollalo nel file, committa.
 
 Oppure dal terminale (per chi sa usare git):
-```git revert <commit-hash>
-git push```
-
+`git revert <commit-hash>
+git push`
 
 ## Architettura
 
